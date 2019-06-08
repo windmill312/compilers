@@ -1,4 +1,6 @@
 import ast.BooleanExpression;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import lexer.Lexer;
 import parser.RecursiveDescentParser;
 
@@ -23,7 +25,8 @@ class BooleanEvaluator {
         BooleanExpression ast = parser.build();
 
         System.out.println(String.format("EXP: %s", expression));
-        System.out.println(String.format("AST: %s\n", ast));
+        Gson gson = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
+        System.out.println(String.format("\nAST: %s\n", gson.toJson(ast)));
     }
 
     private static String getContentFromFile(String path) {
