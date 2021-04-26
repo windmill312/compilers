@@ -41,7 +41,7 @@
     <properties>
         <junit-version>4.12</junit-version>
         <antlr-runtime-version>4.7.2</antlr-runtime-version>
-        <common-io-version>2.6</common-io-version>
+        <common-io-version>2.7</common-io-version>
         <slf4j-api-version>1.7.26</slf4j-api-version>
         <inmemantlr-api-version>1.3.8</inmemantlr-api-version>
     </properties>
